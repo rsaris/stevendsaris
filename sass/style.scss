@@ -1,0 +1,188 @@
+$dark-gray: #222;
+$gold: #bca474;
+
+body {
+  margin: 0;
+  font-family: "Times New Roman";
+  color: $dark-gray;
+}
+
+h1, h2, h3, h4, h5 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 31px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+.js-hidden {
+  display: none;
+}
+
+.home-page {
+  display: block;
+  padding: 20px 0;
+  width: 500px;
+  margin: auto;
+
+  .navbar {
+    text-align: center;
+    margin: 20px 0;
+
+    a {
+      color: $dark-gray;
+      margin: 0 5px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+
+  .header-content {
+    width: 100%;
+
+    h1 {
+      text-transform: uppercase;
+    }
+
+    h4 {
+      text-transform: uppercase;
+      margin: 15px 0;
+    }
+
+    .header-image {
+      width: 100%;
+    }
+  }
+
+  .body-content {
+    margin: 40px 0;
+
+    h2 {
+      text-transform: uppercase;
+      margin: 20px 0 10px;
+    }
+
+    .body-text {
+      margin: 15px 0;
+
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+
+  #works-content {
+    @extend .body-content;
+
+    h3 {
+      text-transform: uppercase;
+    }
+
+    .works-list {
+      img {
+        width: 100%;
+        margin: 15px 0;
+      }
+    }
+  }
+
+  #exhibitions-content {
+    @extend .body-content;
+
+    .exhibitions-section {
+      margin: 10px 0;
+
+      text-align: center;
+      font-size: 14px;
+
+      .header {
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .exhibitions {
+        margin: 50px 0;
+      }
+
+      .exhibition {
+        margin: 25px 0;
+
+        .time {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  #artists-statement-content {
+    @extend .body-content;
+
+    .statement-section {
+      @extend .body-text;
+    }
+  }
+
+  #resume-content {
+    @extend .body-content;
+
+    .resume-section {
+      margin: 10px 0;
+
+      text-align: center;
+      font-size: 14px;
+
+      .header {
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .resume-list {
+        margin: 25px 0;
+      }
+
+      .resume-item {
+        margin: 25px 0;
+
+        .time {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  #contact-content {
+    @extend .body-content;
+
+    .contact-info {
+      @extend .body-text;
+    }
+  }
+}
+
+.divider {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: $dark-gray;
+}
+
+.gold-divider {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: $gold;
+}
