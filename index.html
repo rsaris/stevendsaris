@@ -20,11 +20,11 @@
         <h4>The artistic works of Steven Saris</h4>
         <div class="divider"></div>
         <div id="header-navbar" class="navbar">
-          <a href="#works-content" onclick="showSection( this ); return false;">Works</a>
-          <a href="#exhibitions-content" onclick="showSection( this ); return false;">Exhibitions</a>
-          <a href="#artists-statement-content" onclick="showSection( this ); return false;">Artist's Statement</a>
-          <a href="#resume-content" onclick="showSection( this ); return false;">Resume</a>
-          <a href="#contact-content" onclick="showSection( this ); return false;">Contact</a>
+          <a href="#works-content" onclick="showSection( this ); return false;" data-body-class="dark">Works</a>
+          <a href="#exhibitions-content" onclick="showSection( this ); return false;" data-body-class="light">Exhibitions</a>
+          <a href="#artists-statement-content" onclick="showSection( this ); return false;" data-body-class="light">Artist's Statement</a>
+          <a href="#resume-content" onclick="showSection( this ); return false;" data-body-class="light">Resume</a>
+          <a href="#contact-content" onclick="showSection( this ); return false;" data-body-class="light">Contact</a>
         </div>
         <div class="divider"></div>
         <div class="divider"></div>
@@ -44,14 +44,18 @@
             <img src="images/portrait_1.jpg" />
             <img src="images/portrait_2.jpg" />
             <img src="images/portrait_3.jpg" />
+            <img src="images/claude_and_heloise.jpg" />
           </div>
         </div>
         <div id="works-still-lives">
           <h3>Still Lives</h3>
           <div class="works-list">
-            <img src="images/still_life_1.jpg" />
-            <img src="images/still_life_2.jpg" />
-            <img src="images/still_life_3.jpg" />
+            <img src="images/garlics.jpg" />
+            <img src="images/black_apples.jpg" />
+            <img src="images/pumpkins_and_gourd.jpg" />
+            <img src="images/white_rose.jpg" />
+            <img src="images/ultramarine_jug.jpg" />
+            <img src="images/pumpkin_and_pears.jpg" />
           </div>
         </div>
         <div id="works-animals">
@@ -61,6 +65,7 @@
             <img src="images/animal_2.jpg" />
             <img src="images/animal_3.jpg" />
             <img src="images/animal_4.jpg" />
+            <img src="images/pink_cow.jpg" />
           </div>
         </div>
       </div>
@@ -345,6 +350,7 @@
           $(linkTarget).removeClass( 'js-hidden' );
         } else {
           $(linkTarget).addClass( 'js-hidden' );
+          $('body').removeClass().addClass( $(sender).data( 'body-class' ) );
         }
       });
     }

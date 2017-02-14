@@ -1,9 +1,24 @@
 $dark-gray: #222;
-$gold: #bca474;
+$gold: #BCA474;
+$wine-red: #722F37;
+$off-white: #F3E8EE;
+$white: #FFF;
+$black: #000;
 
 body {
   margin: 0;
   font-family: "Times New Roman";
+  background-color: $wine-red;
+  color: $off-white;
+}
+
+body.dark {
+  background-color: $black;
+  color: $white;
+}
+
+body.light {
+  background-color: $white;
   color: $dark-gray;
 }
 
@@ -42,7 +57,7 @@ h4 {
     margin: 20px 0;
 
     a {
-      color: $dark-gray;
+      color: inherit;
       margin: 0 5px;
       text-transform: uppercase;
       font-weight: bold;
