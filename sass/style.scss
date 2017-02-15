@@ -6,11 +6,18 @@ $sky-blue: #98D2EB;
 $white: #FFF;
 $black: #000;
 
+$max-body-width: 700px;
+
 body {
   margin: 0;
   font-family: "Times New Roman";
   background-color: $wine-red;
   color: $off-white;
+
+  @media( max-width: $max-body-width ) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 body.dark {
@@ -63,14 +70,12 @@ h4 {
   display: block;
   padding: 20px 0;
 
-  @media( max-width: 700px ) {
+  @media( max-width: $max-body-width ) {
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 
-  @media( min-width: 700px ) {
-    width: 700px;
+  @media( min-width: $max-body-width ) {
+    width: $max-body-width;
     margin: auto;
   }
 

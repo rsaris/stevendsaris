@@ -1,60 +1,67 @@
-/* line 9, ../sass/style.scss */
+/* line 11, ../sass/style.scss */
 body {
   margin: 0;
   font-family: "Times New Roman";
   background-color: #722F37;
   color: #F3E8EE;
 }
+@media (max-width: 700px) {
+  /* line 11, ../sass/style.scss */
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
-/* line 16, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 body.dark {
   background-color: #000;
   color: #FFF;
 }
 
-/* line 21, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 body.light {
   background-color: #FFF;
   color: #222;
 }
 
-/* line 26, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 body.sky-blue {
   background-color: #98D2EB;
   color: #222;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 h1, h2, h3, h4, h5 {
   text-align: center;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 h1 {
   font-size: 50px;
 }
 
-/* line 39, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 h2 {
   font-size: 31px;
 }
 
-/* line 43, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 h3 {
   font-size: 28px;
 }
 
-/* line 47, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 h4 {
   font-size: 14px;
 }
 
-/* line 51, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .js-hidden {
   display: none;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .painting, .home-page .header-content .header-image, .home-page #works-content .works-list img {
   display: block;
   width: 500px;
@@ -62,32 +69,30 @@ h4 {
   margin: auto;
 }
 
-/* line 62, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 .home-page {
   display: block;
   padding: 20px 0;
 }
 @media (max-width: 700px) {
-  /* line 62, ../sass/style.scss */
+  /* line 69, ../sass/style.scss */
   .home-page {
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
 @media (min-width: 700px) {
-  /* line 62, ../sass/style.scss */
+  /* line 69, ../sass/style.scss */
   .home-page {
     width: 700px;
     margin: auto;
   }
 }
-/* line 77, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .home-page .navbar {
   text-align: center;
   margin: 20px 0;
 }
-/* line 81, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 .home-page .navbar a {
   color: inherit;
   margin: 0 5px;
@@ -95,92 +100,92 @@ h4 {
   font-weight: bold;
   font-size: 14px;
 }
-/* line 90, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .home-page .header-content {
   width: 100%;
 }
-/* line 93, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 .home-page .header-content h1 {
   text-transform: uppercase;
 }
-/* line 97, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 .home-page .header-content h4 {
   text-transform: uppercase;
   margin: 15px 0;
 }
-/* line 107, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 .home-page .body-content, .home-page #works-content, .home-page #exhibitions-content, .home-page #artists-statement-content, .home-page #resume-content, .home-page #contact-content {
   margin: 40px 0;
 }
-/* line 110, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .home-page .body-content h2, .home-page #works-content h2, .home-page #exhibitions-content h2, .home-page #artists-statement-content h2, .home-page #resume-content h2, .home-page #contact-content h2 {
   text-transform: uppercase;
   margin: 20px 0 10px;
 }
-/* line 115, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .home-page .body-content .body-text, .home-page #works-content .body-text, .home-page #exhibitions-content .body-text, .home-page #artists-statement-content .body-text, .home-page #resume-content .body-text, .home-page #contact-content .body-text, .home-page #artists-statement-content .statement-section, .home-page #contact-content .contact-info {
   margin: 15px 0;
   text-align: center;
   font-size: 16px;
 }
-/* line 126, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 .home-page #works-content h3 {
   text-transform: uppercase;
 }
-/* line 131, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .home-page #works-content .works-list img {
   margin: 30px auto;
 }
-/* line 142, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .home-page #exhibitions-content .exhibitions-section {
   margin: 10px 0;
   text-align: center;
   font-size: 16px;
 }
-/* line 148, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 .home-page #exhibitions-content .exhibitions-section .header {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 154, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 .home-page #exhibitions-content .exhibitions-section .exhibitions {
   margin: 50px 0;
 }
-/* line 158, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 .home-page #exhibitions-content .exhibitions-section .exhibition {
   margin: 25px 0;
 }
-/* line 161, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 .home-page #exhibitions-content .exhibitions-section .exhibition .time {
   margin-right: 20px;
 }
-/* line 179, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 .home-page #resume-content .resume-section {
   margin: 10px 0;
   text-align: center;
   font-size: 16px;
 }
-/* line 185, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .home-page #resume-content .resume-section .header {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 191, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 .home-page #resume-content .resume-section .resume-list {
   margin: 25px 0;
 }
-/* line 195, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .home-page #resume-content .resume-section .resume-item {
   margin: 25px 0;
 }
-/* line 198, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 .home-page #resume-content .resume-section .resume-item .time {
   margin-right: 20px;
 }
 
-/* line 214, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 .divider {
   display: block;
   width: 100%;
@@ -188,7 +193,7 @@ h4 {
   background-color: #222;
 }
 
-/* line 221, ../sass/style.scss */
+/* line 226, ../sass/style.scss */
 .gold-divider {
   display: block;
   width: 100%;
